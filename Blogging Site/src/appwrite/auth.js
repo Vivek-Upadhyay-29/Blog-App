@@ -1,5 +1,5 @@
 import { Client, Account, ID } from "appwrite";
-import conf from "../conf/conf";
+import conf from "../conf/conf.js";
 export class AuthService {
     client = new Client();
     account ;
@@ -50,6 +50,6 @@ export class AuthService {
            throw error;
           }
 }
+}
 const authService = new AuthService();
 export default authService
-
