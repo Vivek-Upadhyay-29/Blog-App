@@ -4,9 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { useDispatch } from 'react-redux'
 import authService from './appwrite/auth'
-import { login, logout } from "./store/authSlice"
-import { Footer, Header } from './components/index'
-
+import { login, logout } from './store/authSlice' 
+import Header from './components/Header/Header.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 function App() {
   const [loading , setLoading] = useState(true)
@@ -28,7 +28,8 @@ function App() {
     <div className='min-h-screen flex flex-wrap
     content-between bg-gray-400'>
       <div className='w-full block'>
-        <Header/>
+        <Header />
+          TODO:
         <Footer />
       </div>
     </div>
